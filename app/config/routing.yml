@@ -1,0 +1,5 @@
+idlabtest:
+    resource: "@IdlabtestBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
