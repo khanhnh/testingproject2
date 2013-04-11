@@ -93,27 +93,32 @@
 		</header>
 		<div id="content-homepage">
 			<hgroup id="restaurant-info" class="clearfix">
-				{% block content %}<h1>&quot;Food Lovers&quot; Restaurant</h1>{% endblock %}
+				{% block content %}<h1>&quot;Food Lovers&quot; Restaurant</h1>
 				<h2 id="phone"><strong>Phone:</strong> +62 82828 4343</h2>
 				<h3 id="info-opening"><strong>Open Daily</strong> Mon-Fri: 10am - 10pm / Sat-Sun: 9am - 11pm</h3>
+                                {% endblock %}
 			</hgroup>
 			<aside id="panel-front" class="clearfix">
 				<article class="static-page">
+                                    {% block content2 %}
 					<h3 id="title-homepage">Welcome to &quot;<em>Food Lovers</em>&quot; Restaurant &amp; Cafe</h3>
 					<img src="{{asset('bundles/idlabtest/restaurant/images/img-1.jpg')}}" alt="Angkringan" class="imgframe" />
 					<p><strong>Foodilicious Sushi Restaurant</strong> is the best Sushi restaurant in Bali, which you can found amazing Food from around the world.</p>
 					<p>Found on 1878 by Chef Ketut Putu, we already have more than 45 branch around the <strong>World &amp; Universe</strong>.</p>
 					<a href="#" class="button-more">More Info</a>
+                                        {% endblock %}
 				</article>
 			</aside>
 		</div>
 		<footer id="footer" class="clearfix">
 			<aside class="box-footer">
+                            {% block content3 %}
 				<h4><span>Food Lovers Restaurant</span></h4>
 				<p>1823 4th Street Barkeley, CA 94710 USA<br />
 				<strong>Phone:</strong> +62 743 4738 <strong>Fax:</strong> +62 843 8492<br />
 				<strong>Email:</strong> hello@sushirestaurant.com</p>
 				<a href="contact.html" class="button-contact">Contact Us</a>
+                            {% endblock %}
 			</aside>
 			<aside class="box-footer daily">
 				<h4>Open Daily</h4>

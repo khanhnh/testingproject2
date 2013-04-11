@@ -16,9 +16,14 @@ class DefaultController extends Controller
     {
         $content = array(
                 'logo' => 'logo.png',
+            'restaurantname' => 'Khanh',
+            'phone' => '+62 82828 4343',
+            'address' => '656th Vovankiet, HCMC',
+            'email' => 'hello@idlab.ch',
+             'fax' => '+62 843 8492',
+            'opendaily1' => 'Mon-Fri: 6am - 6pm',
+             'opendaily2' => 'Sat-Sun: 9am - 11pm',
                 );
         return array('content' => $content);
     }
 }
-
-

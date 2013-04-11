@@ -1,4 +1,41 @@
 {% extends 'IdlabtestBundle:Default:restaurant.html.twig' %}
-{% block logo %}<a href="#" id="logo"><img src="{{asset('bundles/idlabtestBundle/restaurant/images/')}}{{content.logo}}" alt="Foodilicious - Best Sushi Ever" data-retina="images/logo-retina.png"/></a>
+{% block logo %}<a href="#" id="logo"><img src="{{asset('bundles/idlabtest/restaurant/images/')}}{{content.logo}}" alt="Foodilicious - Best Sushi Ever" data-retina="images/logo-retina.png"/></a>
 {% endblock %}
-    {% block content %}<h1>&quot;Khanh&quot; Restauran</h1>{% endblock %}
+
+{% block content %}<h1>&quot;{{content.restaurantname}}&quot; Restaurant</h1>
+				<h2 id="phone"><strong>Phone:</strong> {{content.phone}}</h2>
+				<h3 id="info-opening"><strong>Open Daily</strong>{{content.opendaily1}}/{{content.opendaily2}}</h3>
+{% endblock %}
+    
+    
+ {% block content2 %}
+					<h3 id="title-homepage">Welcome to &quot;<em>{{content.restaurantname}}</em>&quot; Restaurant &amp; Cafe</h3>
+					<img src="{{asset('bundles/idlabtest/restaurant/images/img-1.jpg')}}" alt="Angkringan" class="imgframe" />
+					<p><strong>Foodilicious Sushi Restaurant</strong> is the best Sushi restaurant in Bali, which you can found amazing Food from around the world.</p>
+					<p>Found on 1878 by Chef Ketut Putu, we already have more than 45 branch around the <strong>World &amp; Universe</strong>.</p>
+					<a href="#" class="button-more">More Info</a>
+ {% endblock %}
+        
+                    
+                                        
+{% block content3 %}
+				<h4><span>{{content.restaurantname}}</span></h4>
+				<p>{{content.address}}<br />
+				<strong>Phone:</strong> {{content.phone}} <strong>Fax:</strong> {{content.fax}}<br />
+				<strong>Email:</strong>{{content.email}} </p>
+				<a href="contact.html" class="button-contact">Contact Us</a>
+{% endblock %}
+                                
+                                
+{% block content4 %}
+				<h4>Open Daily</h4>
+				<p>{{content.opendaily1}}<br />{{content.opendaily2}}</p>
+				<ul id="nav-box-footer">
+					<li><a href="#">Foods</a></li>
+					<li><a href="#">Chef</a></li>
+					<li><a href="#">Blog</a></li>
+					<li class="last"><a href="#">Location</a></li>
+				</ul>
+{% endblock %}
+                                    
+                            
